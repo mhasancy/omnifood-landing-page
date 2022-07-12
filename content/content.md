@@ -131,15 +131,15 @@ Privacy & terms
 
 ## Section needed
 
--Navigation
--Hero
--Features
--How it works
--Diets
--Meals
--Pricing
--Gallery
--Testimonials
--Featured in
--Call to Action
--Footer
+- Navigation
+- Hero
+- Features
+- How it works
+- Diets
+- Meals
+- Pricing
+- Gallery
+- Testimonials
+- Featured in
+- Call to Action
+- Footer
