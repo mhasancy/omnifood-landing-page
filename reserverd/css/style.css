@@ -14,7 +14,6 @@ Bold: 700
 Default : 1
 small: 1.05
 Paragraph default:1.6
-Large: 1.8
 
 - Letter spacing:
 -0.5px
@@ -72,7 +71,6 @@ html {
   /* 10px / 16px = 0.625 = 62.5% */
   /* Percentage of user's browser font-size setting */
   font-size: 62.5%;
-  overflow-x: hidden;
 }
 
 body {
@@ -80,7 +78,6 @@ body {
   line-height: 1;
   font-weight: 400;
   color: #555;
-  overflow-x: hidden;
 }
 
 /***********************************/
@@ -244,7 +241,6 @@ body {
   display: flex;
   align-items: center;
   gap: 1.6rem;
-  line-height: 1.2;
 }
 
 .list-icon {
@@ -288,7 +284,6 @@ strong {
   /* Because we want header to be sticky later */
   height: 9.6rem;
   padding: 0 4.8rem;
-  position: relative;
 }
 
 .logo {
@@ -301,7 +296,7 @@ strong {
 .main-nav-list {
   list-style: none;
   display: flex;
-  gap: 4.8rem;
+  gap: 3.2rem;
   align-items: center;
 }
 
@@ -332,21 +327,7 @@ strong {
 .main-nav-link.nav-cta:active {
   background-color: #cf711f;
 }
-/* MOBILE */
-.btn-mobile-nav {
-  border: none;
-  background: none;
-  cursor: pointer;
-  display: none;
-}
-.icon-mobile-nav {
-  height: 4.8rem;
-  width: 4.8rem;
-  color: #333;
-}
-.icon-mobile-nav[name="close-outline"] {
-  display: none;
-}
+
 /********************/
 /* HERO SECTION */
 /********************/
