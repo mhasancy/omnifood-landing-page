@@ -25,6 +25,7 @@ Paragraph default:1.6
 - Shades:#cf711f
 - Accents:
 - Greys: #555, #333
+lightest gray #6f6f6f
 
 --- 05 SHADOWS
 
@@ -97,7 +98,7 @@ body {
 }
 .heading-secondary {
   font-size: 4.4rem;
-  line-height: 1.2rem;
+  line-height: 1.2;
   margin-bottom: 9.6rem;
 }
 
@@ -107,7 +108,7 @@ body {
   font-weight: 500;
   color: #cf711f;
   text-transform: uppercase;
-  margin-bottom: 1.6rem;
+  margin-bottom: 1.6;
   letter-spacing: 0.75px;
 }
 .heading-tertiary {
@@ -453,13 +454,20 @@ strong {
 /*************************/
 
 .section-testimonials {
-  padding: 9.6rem 0;
+  display: grid;
+  grid-template-columns: 55fr 45fr;
+  align-items: center;
+  background-color: #fdf2e9;
+}
+.testimonials-container {
+  padding: 9.6rem;
 }
 
 .testimonials {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  gap: 4.8rem;
+  row-gap: 4.8rem;
+  column-gap: 8rem;
 }
 .testimonial-img {
   width: 6.4rem;
@@ -473,5 +481,24 @@ strong {
 }
 .testimonial-name {
   font-size: 1.6rem;
-  color: #777;
+  color: #6f6f6f;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+
+  gap: 1.6rem;
+  padding: 1.6rem;
+}
+.gallery-item {
+  overflow: hidden;
+}
+.gallery-item img {
+  display: block;
+  width: 100%;
+  transition: all 0.4s;
+}
+.gallery-item img:hover {
+  transform: scale(1.1);
 }
