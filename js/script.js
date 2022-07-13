@@ -1,7 +1,7 @@
 /* Setting current year */
-const yearEl = document.querySelector(".year");
+/* const yearEl = document.querySelector(".year");
 const currentYear = new Date().getFullYear();
-yearEl.textContent = currentYear;
+yearEl.textContent = currentYear; */
 
 /* Making mobile navigation work */
 const btnNavEl = document.querySelector(".btn-mobile-nav");
