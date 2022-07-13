@@ -23,12 +23,13 @@ Paragraph default:1.6
 - Primary: #e67e22
 - Tints:#fdf2e9
 - Shades:#cf711f
-- Accents:
+- Accents:#eb984e
 - Greys: #555, #333
 lightest gray #6f6f6f
+#45260a
 
 --- 05 SHADOWS
-
+box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
 
 --- 06 BORDER-RADIUS
 Default: 9px
@@ -119,11 +120,10 @@ body {
   line-height: 1.2;
   margin-bottom: 3.2rem;
 }
+.btn,
 .btn:link,
 .btn:visited {
   display: inline-block;
-
-  color: #fff;
   font-size: 2rem;
   padding: 1.6rem 3.2rem;
   border-radius: 9px;
@@ -131,6 +131,10 @@ body {
   transition: all 0.3s;
   /* transition: background-color 0.3s; */
   font-weight: 600;
+  /* only for button */
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 .btn--fill:link,
 .btn--fill:visited {
@@ -153,7 +157,16 @@ body {
   /* border: 3px solid #fff; */
   box-shadow: inset 0 0 0 3px #fff;
 }
-
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+}
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
 .link:link,
 .link:visited {
   display: inline-block;
@@ -185,6 +198,12 @@ body {
   width: 3rem;
   height: 3rem;
   color: #e67e22;
+}
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22; */
+  /* outline-offset: 8px; */
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
 }
 /* HELPER SETTINGS CLASSES */
 .margin-right-sm {
@@ -600,4 +619,75 @@ strong {
 .feature-text {
   font-size: 1.6rem;
   line-height: 1.8;
+}
+
+/*************************/
+/* CTA SECTION */
+/*************************/
+
+.section-cta {
+  padding: 9.6rem 0;
+}
+.cta {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  background-color: #e67e22;
+  box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.15);
+  background-image: linear-gradient(to right bottom, #eb984e, #e67e22);
+  border-radius: 11px;
+  overflow: hidden;
+}
+.cta-text-box {
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  color: #45260a;
+}
+.cta .heading-secondary {
+  /* color: #45260a; */
+  color: inherit;
+  margin-bottom: 3.2rem;
+}
+.cta-text {
+  font-size: 1.8rem;
+  line-height: 1.8;
+  margin: 4.8rem;
+}
+.cta-img-box {
+  background-image: linear-gradient(
+      rgba(235, 151, 78, 0.35),
+      rgba(230, 125, 34, 0.35)
+    ),
+    url("../img/eating.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.cta-form {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 3.2rem;
+  row-gap: 2.4rem;
+}
+.cta-form label {
+  display: block;
+  font-size: 1.6rem;
+  font-weight: 500;
+  margin-bottom: 1.2rem;
+}
+.cta-form input,
+select {
+  width: 100%;
+  padding: 1.2rem;
+  font-size: 1.8rem;
+  font-family: inherit;
+  color: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 9px;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
+}
+.cta-form input::placeholder {
+  color: #aaa;
+}
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.8rem rgba(253, 242, 233, 0.5);
 }
